@@ -1,7 +1,7 @@
-import 'package:encrypt_custom_types/encrypt_bho/coder/binary_coder.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/abstract_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/decoder/binary_decoder.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
+import 'package:encrypt_bho/encrypt_bho/coder/binary_coder.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/abstract_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/decoder/binary_decoder.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
 
 class BinaryConverter extends AConverter {
   BinaryConverter({required BinaryCoder coder, required BinaryDecoder decoder})

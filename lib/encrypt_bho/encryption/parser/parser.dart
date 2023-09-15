@@ -1,5 +1,5 @@
-import 'package:encrypt_custom_types/encrypt_bho/encryption/enum_encryptionTypes.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/parser/parsing_error.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_encryptionTypes.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/parser/parsing_error.dart';
 
 String parse(String text, Map<String, int> weights, EncryptionTypes type) {
   bool success = true;

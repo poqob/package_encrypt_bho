@@ -1,8 +1,8 @@
 // ignore: file_names
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/encrypt_binary.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/encrypt_hex.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/encrypt_octal.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/encrypt_binary.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/encrypt_hex.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/encrypt_octal.dart';
 
 enum EncryptionTypes {
   binary,

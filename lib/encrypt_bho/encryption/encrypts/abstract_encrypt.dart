@@ -1,4 +1,4 @@
-import 'package:encrypt_custom_types/encrypt_bho/encryption/enum_encryptionTypes.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_encryptionTypes.dart';
 
 abstract class Encrypt {
   String? _encryptedText;

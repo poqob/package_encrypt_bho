@@ -1,6 +1,6 @@
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/enum_encryptionTypes.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/parser/parser.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_encryptionTypes.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/parser/parser.dart';
 
 List<Encrypt> stringToEncrypts(
     String input, Map<String, int> weights, EncryptionTypes type) {

@@ -1,6 +1,6 @@
-import 'package:encrypt_custom_types/encrypt_bho/coder/m_code/m_binary_code.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/encrypt_binary.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/encrypt_octal.dart';
+import 'package:encrypt_bho/encrypt_bho/coder/m_code/m_binary_code.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/encrypt_binary.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/encrypt_octal.dart';
 
 mixin OctalCode {
   static List<Octal> textToOctal(String text) {

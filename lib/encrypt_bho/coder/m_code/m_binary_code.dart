@@ -1,4 +1,4 @@
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/encrypt_binary.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/encrypt_binary.dart';
 
 mixin BinaryCode {
   static List<Binary> textToBinary(String text) {

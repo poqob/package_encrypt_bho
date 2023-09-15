@@ -1,6 +1,6 @@
-import 'package:encrypt_custom_types/encrypt_bho/converter/binary_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/hex_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/octal_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/binary_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/hex_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/octal_converter.dart';
 
 enum Algorithms {
   text2binary,

@@ -1,5 +1,5 @@
-import 'package:encrypt_custom_types/encrypt_bho/converter/binary_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/hex_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/binary_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/hex_converter.dart';
 import 'package:test/test.dart';
 
 /**import 'package:encrypt_custom_types/encrypt_custom_types.dart';
