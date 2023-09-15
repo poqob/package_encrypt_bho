@@ -11,11 +11,17 @@ List<Encrypt> stringToEncrypts(
     (element) {
       encrypt = type.getDumbObject;
       encrypt.setEncrypt = parse(element, weights, type);
+
       list.add(encrypt);
     },
   );
   list.removeWhere(
     (element) => element.getEncrypt.isEmpty,
   );
+  for (Encrypt element in list) {
+    if (element.getEncrypt.isEmpty) {
+      element.setEncrypt = " ";
+    }
+  }
   return list;
 }

@@ -1,6 +1,5 @@
-import 'package:encrypt_bho/encrypt_bho/converter/binary_converter.dart';
-import 'package:encrypt_bho/encrypt_bho/converter/hex_converter.dart';
-import 'package:encrypt_bho/encrypt_bho/converter/octal_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_decodes.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_encodes.dart';
 
 enum Algorithms {
   text2binary,
@@ -15,26 +14,17 @@ extension ExtensionAlghorithms on Algorithms {
   List<String> calculate(String input) {
     switch (index) {
       case 0:
-        return BinaryConverter.defaultConverter()
-            .encode(input)
-            .map((e) => e.getEncrypt)
-            .toList();
+        return Encodes.text2binary.calculate(input);
       case 1:
-        return OctalConverter.defaultConverter()
-            .encode(input)
-            .map((e) => e.getEncrypt)
-            .toList();
+        return Encodes.text2octal.calculate(input);
       case 2:
-        return HexConverter.defaultConverter()
-            .encode(input)
-            .map((e) => e.getEncrypt)
-            .toList();
+        return Encodes.text2hex.calculate(input);
       case 3:
-        return BinaryConverter.defaultConverter().decode(input);
+        return Decodes.binary2text.calculate(input);
       case 4:
-        return OctalConverter.defaultConverter().decode(input);
+        return Decodes.octal2text.calculate(input);
       case 5:
-        return HexConverter.defaultConverter().decode(input);
+        return Decodes.hex2text.calculate(input);
       default:
         return [];
     }

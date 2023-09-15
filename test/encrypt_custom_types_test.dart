@@ -27,6 +27,7 @@ void main() {
     });
     final con = BinaryConverter.defaultConverter();
     final con2 = HexConverter.defaultConverter();
+
     test('First Test', () {
       expect(con2.decode("61").first, "a");
     });
