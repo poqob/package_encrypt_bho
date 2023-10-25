@@ -22,5 +22,5 @@ This is a converter app that allows you to create custom converters for differen
       algorithm.calculate(result).forEach(
             (element) => binaryToTextResult += element,
           );
-      expect(text, binaryToTextResult);
+      expect(text, binaryToTextResult); // true
 ```

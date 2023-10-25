@@ -1,15 +1,10 @@
-<<<<<<< HEAD
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_decodes.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_encodes.dart';
+
 /// This file contains the [Algorithms] enum and its extension [ExtensionAlgorithms].
 /// The [Algorithms] enum lists the available encryption algorithms, including text to binary, text to octal, text to hexadecimal, binary to text, octal to text, and hexadecimal to text.
 /// The [ExtensionAlgorithms] extension provides a [calculate] method that takes an [input] string and returns a list of encrypted or decrypted values based on the selected algorithm.
 /// The [calculate] method uses [BinaryConverter], [OctalConverter], and [HexConverter] to perform the encryption and decryption operations.
-import 'package:encrypt_custom_types/encrypt_bho/converter/binary_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/hex_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/octal_converter.dart';
-=======
-import 'package:encrypt_bho/encrypt_bho/encryption/enum_decodes.dart';
-import 'package:encrypt_bho/encrypt_bho/encryption/enum_encodes.dart';
->>>>>>> aa711a6d5604bb40342cb58c30005eaec9e3360e
 
 enum Algorithms {
   text2binary,
