@@ -1,9 +1,5 @@
 # Converter App
 
-## Introduction
-
-This is a converter app that allows you to create custom converters for different encoding and decoding operations. To create a new converter, follow the steps below:
-
 ## Creating a New Converter
 
 To create a new converter for your encoding and decoding needs, follow these steps:
