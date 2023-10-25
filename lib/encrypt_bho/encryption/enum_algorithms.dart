@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /// This file contains the [Algorithms] enum and its extension [ExtensionAlgorithms].
 /// The [Algorithms] enum lists the available encryption algorithms, including text to binary, text to octal, text to hexadecimal, binary to text, octal to text, and hexadecimal to text.
 /// The [ExtensionAlgorithms] extension provides a [calculate] method that takes an [input] string and returns a list of encrypted or decrypted values based on the selected algorithm.
@@ -5,6 +6,10 @@
 import 'package:encrypt_custom_types/encrypt_bho/converter/binary_converter.dart';
 import 'package:encrypt_custom_types/encrypt_bho/converter/hex_converter.dart';
 import 'package:encrypt_custom_types/encrypt_bho/converter/octal_converter.dart';
+=======
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_decodes.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/enum_encodes.dart';
+>>>>>>> aa711a6d5604bb40342cb58c30005eaec9e3360e
 
 enum Algorithms {
   text2binary,
@@ -19,26 +24,17 @@ extension ExtensionAlghorithms on Algorithms {
   List<String> calculate(String input) {
     switch (index) {
       case 0:
-        return BinaryConverter.defaultConverter()
-            .encode(input)
-            .map((e) => e.getEncrypt)
-            .toList();
+        return Encodes.text2binary.calculate(input);
       case 1:
-        return OctalConverter.defaultConverter()
-            .encode(input)
-            .map((e) => e.getEncrypt)
-            .toList();
+        return Encodes.text2octal.calculate(input);
       case 2:
-        return HexConverter.defaultConverter()
-            .encode(input)
-            .map((e) => e.getEncrypt)
-            .toList();
+        return Encodes.text2hex.calculate(input);
       case 3:
-        return BinaryConverter.defaultConverter().decode(input);
+        return Decodes.binary2text.calculate(input);
       case 4:
-        return OctalConverter.defaultConverter().decode(input);
+        return Decodes.octal2text.calculate(input);
       case 5:
-        return HexConverter.defaultConverter().decode(input);
+        return Decodes.hex2text.calculate(input);
       default:
         return [];
     }

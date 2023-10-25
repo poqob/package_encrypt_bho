@@ -1,7 +1,7 @@
-import 'package:encrypt_custom_types/encrypt_bho/coder/octal_coder.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/abstract_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/decoder/octal_decoder.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
+import 'package:encrypt_bho/encrypt_bho/coder/octal_coder.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/abstract_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/decoder/octal_decoder.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
 
 class OctalConverter extends AConverter {
   OctalConverter({required OctalEncoder coder, required OctalDecoder decoder})

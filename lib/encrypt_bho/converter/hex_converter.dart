@@ -1,7 +1,7 @@
-import 'package:encrypt_custom_types/encrypt_bho/coder/hex_coder.dart';
-import 'package:encrypt_custom_types/encrypt_bho/converter/abstract_converter.dart';
-import 'package:encrypt_custom_types/encrypt_bho/decoder/hex_decoder.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
+import 'package:encrypt_bho/encrypt_bho/coder/hex_coder.dart';
+import 'package:encrypt_bho/encrypt_bho/converter/abstract_converter.dart';
+import 'package:encrypt_bho/encrypt_bho/decoder/hex_decoder.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
 
 class HexConverter extends AConverter {
   HexConverter({required HexCoder coder, required HexDecoder decoder})

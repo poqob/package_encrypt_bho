@@ -1,5 +1,5 @@
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
-import 'package:encrypt_custom_types/encrypt_bho/encryption/encrypts/m_weights.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/abstract_encrypt.dart';
+import 'package:encrypt_bho/encrypt_bho/encryption/encrypts/m_weights.dart';
 
 mixin HexDecode {
   static List<String> hexToText(List<Encrypt> hexes) {
